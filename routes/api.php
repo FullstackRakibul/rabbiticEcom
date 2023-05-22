@@ -33,12 +33,9 @@ Route::prefix('auth')->group(function(){
     Route::get('/blog/delete/{id}', [BlogController::class,'destroy']);
 
 
-    // Route::get( '/login',function(){
-    //     return response()->json([
-    //         'status' => 'failed',
-    //         'message' => 'Please Login first',
-    //         ], 401);
-    // })->name('login');
+    Route::get( '/login',function(){
+        return response()->json(['message' => 'Please Login first'], 401);
+    })->name('login');
 
     Route::middleware('auth:api')->group(function(){
         Route::post('/logout' , [AuthController::class, 'logout']);

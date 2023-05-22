@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+  }
+  
+  /* Set the background color of the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background-color: #4B0082;
+  }
+  
+  /* Set the background color of the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #ff5f20;
+  }
+  
+  /* Set the color and style of the scrollbar corner */
+  ::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+    border: 1px solid #888;
+  }
+  
+
+:root {
+    --primary-color: #4B0082;
+    --secondary-color: #ff5f20;
+
+
+    --container-color: #edf2f7;
+    --bgcolor: #F0F2F5;
+
+
+    --button-color: #4B0082;
+    --button-hover-color: #ff5f20;
+    --button-text-color: #fff;
+    --button-hover-text-color: #fff;
+
+    --primary-font-color: #ff5f20;
+    --border-color: #4F267B;
+}
