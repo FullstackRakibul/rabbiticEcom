@@ -26,26 +26,24 @@ Route::prefix('auth')->group(function(){
     Route::post('/register' , [AuthController::class, 'register']);
     Route::post('/login' , [AuthController::class, 'login']);
     
+
+    
+    
+    Route::get( '/login',function(){
+        return response()->json(['message' => 'Please Login first'], 401);
+    })->name('login');
+    
     // blog routes
     Route::get('/blog', [BlogController::class,'index']);
     Route::post('/blog/store', [BlogController::class,'store']);
     Route::get('/blog/show/{id}', [BlogController::class,'show']);
     Route::get('/blog/delete/{id}', [BlogController::class,'destroy']);
-
-
-    Route::get( '/login',function(){
-        return response()->json(['message' => 'Please Login first'], 401);
-    })->name('login');
-
+    
     Route::middleware('auth:api')->group(function(){
         Route::post('/logout' , [AuthController::class, 'logout']);
         Route::get('/user/{id}' , [AuthController::class, 'show']);
-
-
-        
-
-        
-
     });
 });
+
+
 

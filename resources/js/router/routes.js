@@ -1,22 +1,19 @@
-// Components and Pages import list 
+// Components and Pages import list
 
+import HomePage from "../pages/HomePage.vue";
+import BlogPage from "../pages/BlogPage.vue";
+import NotFoundPage from "../pages/NotFoundPage.vue";
 
-import HomePage from '../pages/HomePage.vue';
-import NotFoundPage from '../pages/NotFoundPage.vue';
-import LoginPage from '../pages/auth/LoginPage.vue';
-import RegisterPage from '../pages/auth/RegisterPage.vue'
-
-
-
-
+import LoginPage from "../pages/auth/LoginPage.vue";
+import RegisterPage from "../pages/auth/RegisterPage.vue";
 
 // routes list
 
-const routes =[
+const routes = [
     {
-        path: '/',
-        name: 'homePage',
-        component: HomePage
+        path: "/",
+        name: "homePage",
+        component: HomePage,
     },
     {
         path: "/:pathMatch(.*)*",
@@ -30,10 +27,14 @@ const routes =[
     },
     {
         path: "/register",
-        name: "RegisterPage",
+        name: "registerPage",
         component: RegisterPage,
     },
-
-]
+    {
+        path: "/blog",
+        name: "blogPage",
+        component: BlogPage,
+    },
+];
 
 export default routes;
