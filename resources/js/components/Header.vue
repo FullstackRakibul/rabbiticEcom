@@ -2,7 +2,7 @@
     <div>
         <!-- Responsive navbar design with tailwind css start-->
         <div
-            class="container bg-primary-color text-white py-3.5 md:flex justify-between items-center"
+            class="container text-white py-3.5 md:flex justify-between items-center"
         >
             <div class="flex justify-center item-center cursor-pointer">
                 <h1
@@ -84,6 +84,9 @@
                     </router-link>
                 </li>
             </ul>
+            <div class="p2">
+                <seticon icon="user" />
+            </div>
         </div>
         <!-- Responsive navbar design with tailwind css end-->
     </div>

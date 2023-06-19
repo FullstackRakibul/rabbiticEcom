@@ -1,9 +1,9 @@
 <template>
     <div>
-        <!-- login -->
-        <div class="contain py-16">
+        <!-- Registration -->
+        <div class="container py-16 bg-gray-100">
             <div
-                class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden"
+                class="max-w-lg mx-auto shadow bg-white px-6 py-7 rounded overflow-hidden"
             >
                 <h2 class="text-2xl uppercase font-medium mb-1">
                     Create an account

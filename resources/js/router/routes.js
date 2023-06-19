@@ -1,4 +1,4 @@
-// Components and Pages import list 
+// Components and Pages import list
 
 // page import 
 import HomePage from '../pages/HomePage.vue';
@@ -20,11 +20,11 @@ import BrandCard from '../components/BrandCard.vue';
 
 // routes list
 
-const routes =[
+const routes = [
     {
-        path: '/',
-        name: 'homePage',
-        component: HomePage
+        path: "/",
+        name: "homePage",
+        component: HomePage,
     },
     {
         path: "/:pathMatch(.*)*",
@@ -38,6 +38,7 @@ const routes =[
     },
     {
         path: "/register",
+        name: "registerPage",
         name: "registerPage",
         component: RegisterPage,
     },

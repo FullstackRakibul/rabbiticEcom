@@ -1,12 +1,11 @@
-import './bootstrap';
-import {createApp} from 'vue';
-import Frontend from './layouts/Frontend.vue';
-import '../css/app.css';
-import router from './router/router.js'
-
-
+import "./bootstrap";
+import { createApp } from "vue";
+import Frontend from "./layouts/Frontend.vue";
+import "../css/app.css";
+import router from "./router/router.js";
 
 // font awesome icon and libs imports
+
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 /* import font awesome icon component */
@@ -24,4 +23,4 @@ library.add(fas);
 
 app.component("icon", FontAwesomeIcon);
 app.use(router);
-app.mount('#app');
+app.mount("#app");
