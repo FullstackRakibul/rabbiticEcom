@@ -83,7 +83,7 @@ class BlogController extends Controller
         if ($blog){
             return send_response("Success" , new BlogResource($blog));
         }else{
-            return send_error('Data not Found !!');
+            return send_error('Blog Data not Found !!');
         }
     }
 

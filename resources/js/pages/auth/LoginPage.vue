@@ -71,7 +71,7 @@
                     </form>
                     <p class="mt-4 text-center text-gray-600">
                         Don't have an account?
-                        <router-link to="/registration" class="text-primary">
+                        <router-link to="/register" class="text-primary">
                             Create one
                         </router-link>
                     </p>
@@ -106,6 +106,7 @@ export default {
                     localStorage.setItem('token', response.data.token);
                     this.$router.push({ name: 'homePage' });
                     // redirect to home page or dashboard
+                    console.log(response);
                 })
 
                 .catch(error => {

@@ -69,9 +69,6 @@ class AuthController extends Controller
 
 
         try{
-
-           
-
             // create token for laravel passport 
             $user = User::create([
                 'name' => $request->name,
@@ -80,12 +77,6 @@ class AuthController extends Controller
             ]);
             $token = $user->createToken('accessToken')->accessToken;
 
-            // return response()->json([
-            //     'status' => true,
-            //     'message' => 'Registration success',
-            //     'user' => $user,
-            //     'token' => $token
-            // ]);
             $data = [
                 'user' => $user,
                 'token' => $token
@@ -125,7 +116,7 @@ class AuthController extends Controller
     {
         $user = User::find($id);
 
-        return send_response("Success" , $user);
+        return send_response("Success" , $user); 
     }
 
     /**
@@ -161,4 +152,6 @@ class AuthController extends Controller
     {
         //
     }
+
+    
 }

@@ -4,14 +4,8 @@
         <footer class="bg-white pt-16 pb-12 border-t border-primary-color flex flex-wrap">
             <div class="container grid grid-cols-3">
                 <div class="col-span-1 space-y-8 mr-2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG4IANp3WJQO-PJJ9S_WAolaDeN1FcyMET5RUbGZHfQ2PXvRw1juFRIxXHbR8uCQehJQ&usqp=CAU"
+                    <img src="../../media/rabbitic-logo.png"
                         alt="logo" class="w-30" />
-                    <div class="mr-2">
-                        <p class="text-gray-500">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quia, hic?
-                        </p>
-                    </div>
                     <div class="flex space-x-6">
                         <a href="#" class="text-gray-400 hover:text-gray-500"><i
                                 class="fa-brands fa-facebook-square"></i></a>
